@@ -1,0 +1,332 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    direction: rtl;
+    background-color: #f9f9f9;
+}
+
+/* ====== الهيدر (القسم الرئيسي) ====== */
+.hero-section {
+    background: linear-gradient(135deg, #A8E6A3, #81C784);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.overlay {
+    max-width: 800px;
+    margin: auto;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.hero-section h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.hero-section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* ====== صندوق البحث ====== */
+.search-box {
+    display: flex;
+    justify-content: center;
+    background: white;
+    padding: 10px;
+    border-radius: 50px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .search-box input {
+        flex: 1;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        outline: none;
+        border-radius: 50px;
+    }
+
+    .search-box button {
+        background: #FFB6C1;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+/* ====== القائمة ====== */
+.header-bottom {
+    background: #66BB6A;
+    padding: 10px 0;
+}
+
+    .header-bottom a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        margin: 0 15px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+        .header-bottom a:hover {
+            text-decoration: underline;
+        }
+/* ====== تنسيق قسم "من نحن" ====== */
+#about-us {
+    background: #A8E6A3; /* لون أخضر فاتح */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+#about-us h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+#about-us p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* ====== ترتيب المنتجات في صفوف وأعمدة ====== */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* يجعلها متجاوبة */
+    gap: 20px;
+    justify-content: center;
+}
+
+/* تصميم الكروت */
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+    .product:hover {
+        transform: translateY(-5px);
+    }
+
+    /* حجم الصور */
+    .product img {
+        width: 100%;
+        max-height: 200px;
+        object-fit: contain;
+        border-radius: 8px;
+    }
+
+    /* تنسيق النصوص */
+    .product h3 {
+        font-size: 18px;
+        margin: 10px 0;
+        color: #333;
+    }
+
+.price, .duration, .reviews {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.reviews {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+/* ====== قسم المراجعات ====== */
+.reviews-section {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.review img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.review-content {
+    text-align: right;
+}
+
+.review h4 {
+    margin: 0;
+    color: #333;
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 18px;
+}
+
+.review p {
+    margin: 5px 0 0;
+    color: #555;
+}
+/* ====== قسم المراجعات على شكل مربعات ====== */
+.reviews-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.review {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .review img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    .review h4 {
+        margin: 5px 0;
+        color: #333;
+    }
+
+.stars {
+    color: #FFD700;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.review p {
+    color: #555;
+    font-size: 14px;
+}
+.social-media {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* لون خلفية خفيف */
+    border-radius: 10px; /* زوايا دائرية */
+    text-align: center;
+}
+
+    .social-media h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .social-media a {
+        margin: 0 15px;
+        font-size: 20px;
+        text-decoration: none;
+        color: #333; /* لون النص */
+    }
+
+        .social-media a:hover {
+            color: #007BFF; /* تغيير اللون عند المرور بالماوس */
+        }
+#contact-us {
+    background: #A8E6A3; /* لون أخضر فاتح */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    font-size: 18px;
+}
+
+input[type="file"],
+input[type="number"],
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+.add-to-cart {
+    background-color: #90EE90; /* أخضر فاتح */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+    .add-to-cart:hover {
+        background-color: #76c776; /* لون أغمق عند التمرير */
+    }

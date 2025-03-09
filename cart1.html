@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة التسوق</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .cart-container {
+            width: 50%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+            .cart-item:last-child {
+                border-bottom: none;
+            }
+
+        .total {
+            font-size: 18px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .checkout-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .header-bottom {
+            background: #66BB6A;
+            padding: 10px 0;
+        }
+
+            .header-bottom a {
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+                margin: 0 15px;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+                .header-bottom a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<header>
+
+
+    <nav class="header-bottom">
+        <a href="index.html">🏠 الصفحة الرئيسية</a>
+
+    </nav>
+</header>
+<body>
+
+    <div class="cart-container">
+        <h2>سلة التسوق</h2>
+        <div class="cart-item">
+            <span>كاميرا Sony A7 III</span>
+            <span>100 ريال/يوم</span>
+            <button>❌</button>
+        </div>
+        <div class="cart-item">
+            <span>ماك بوك برو 16 إنش</span>
+            <span>150 ريال/يوم</span>
+            <button>❌</button>
+        </div>
+        <div class="cart-item">
+            <span>دراجة كهربائية</span>
+            <span>50 ريال/يوم</span>
+            <button>❌</button>
+        </div>
+        <p class="total">المجموع: 300 ريال</p>
+        <button class="checkout-btn">إتمام الطلب</button>
+    </div>
+</body>
+</html>

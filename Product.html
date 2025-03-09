@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المنتجات - متجر المنتجات</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            text-align: right;
+        }
+
+        .header {
+            background: linear-gradient(to right, #4CAF50, #2E8B57);
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .home-btn {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            background: #ffffff;
+            color: #2E8B57;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .home-btn:hover {
+            background: #ddd;
+        }
+
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .features {
+            text-align: right;
+            padding: 0 10px;
+            font-size: 14px;
+            color: #444;
+        }
+
+        .features li {
+            margin-bottom: 5px;
+        }
+
+        .price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #e91e63;
+        }
+
+        .details-btn {
+            display: inline-block;
+            padding: 8px 12px;
+            margin-top: 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .details-btn:hover {
+            background-color: #0056b3;
+        }
+        .header-bottom {
+            background: #66BB6A;
+            padding: 10px 0;
+        }
+
+            .header-bottom a {
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+                margin: 0 15px;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+                .header-bottom a:hover {
+                    text-decoration: underline;
+                }
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>وصف المنتجات </h1>
+        <nav class="header-bottom">
+            <a href="index.html">🏠 الصفحة الرئيسية</a>
+
+        </nav>
+    </header>
+
+    <h2 style="text-align:center; margin-top: 20px;">المنتجات المتاحه </h2>
+    <div class="products-container">
+        <!-- المنتج 1 -->
+        <div class="product">
+            <img src="p6.png" alt="ماكينة الحلاقة">
+            <h3>ماكينة حلاقة 11 في 1</h3>
+            <p>آلة حلاقة احترافية متعددة الاستخدامات للرجال.</p>
+            <ul class="features">
+                <li>✔️ تحتوي على 11 أداة مختلفة للحلاقة</li>
+                <li>✔️ مقاومة للماء وقابلة للغسل</li>
+                <li>✔️ بطارية تدوم حتى 90 دقيقة</li>
+                <li>✔️ شفرات حادة ودقيقة لنتائج مثالية</li>
+            </ul>
+            <div class="price">السعر: 246 ريال</div>
+            <a href="#" class="details-btn">عرض التفاصيل</a>
+        </div>
+
+        <!-- المنتج 2 -->
+        <div class="product">
+            <img src="p5.png" alt="كاميرا">
+            <h3>كاميرا Sony 4K</h3>
+            <p>كاميرا احترافية عالية الجودة للمصورين.</p>
+            <ul class="features">
+                <li>📷 دقة تصوير 4K فائقة الوضوح</li>
+                <li>🔋 بطارية تدوم حتى 10 ساعات</li>
+                <li>🎥 تصوير فيديو بطيء الحركة</li>
+                <li>🌟 تقنية تثبيت الصورة لمنع الاهتزاز</li>
+            </ul>
+            <div class="price">السعر: 150 ريال يوميًا</div>
+            <a href="#" class="details-btn">عرض التفاصيل</a>
+        </div>
+
+        <!-- المنتج 3 -->
+        <div class="product">
+            <img src="p4.png" alt="لاب توب">
+            <h3>لاب توب MacBook Pro</h3>
+            <p>لابتوب قوي مناسب للعمل والدراسة.</p>
+            <ul class="features">
+                <li>💻 معالج M1 قوي وسريع</li>
+                <li>🔋 بطارية تدوم حتى 20 ساعة</li>
+                <li>📺 شاشة Retina فائقة الدقة</li>
+                <li>🎵 صوت ستيريو عالي الجودة</li>
+            </ul>
+            <div class="price">السعر: 200 ريال يوميًا</div>
+            <a href="#" class="details-btn">عرض التفاصيل</a>
+        </div>
+
+        <!-- المنتج 4 -->
+        <div class="product">
+            <img src="p1.png" alt="ساعة ذكية">
+            <h3>ساعة ذكية</h3>
+            <p>ساعة رياضية تتبع اللياقة والصحة.</p>
+            <ul class="features">
+                <li>⌚ مقاومة للماء حتى عمق 50 مترًا</li>
+                <li>💓 مستشعر لقياس نبضات القلب</li>
+                <li>🔋 بطارية تدوم لأسبوع كامل</li>
+                <li>📱 متوافقة مع iOS و Android</li>
+            </ul>
+            <div class="price">السعر: 300 ريال</div>
+            <a href="#" class="details-btn">عرض التفاصيل</a>
+        </div>
+    </div>
+
+</body>
+</html>

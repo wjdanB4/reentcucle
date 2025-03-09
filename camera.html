@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة منتج</title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+</head>
+<body>
+    <header>
+
+
+        <nav class="header-bottom">
+            <a href="index.html">🏠 الصفحة الرئيسية</a>
+
+        </nav>
+    </header>
+    <header>
+        <h1>إضافة منتج جديدة</h1>
+    </header>
+
+    <div class="container">
+        <form action="/submit-camera" method="POST" enctype="multipart/form-data">
+            <label for="camera-image">صورة المنتج:</label>
+            <input type="file" id="camera-image" name="camera-image" accept="image/*" required>
+
+            <label for="price">السعر (ريال/يوم):</label>
+            <input type="number" id="price" name="price" placeholder="أدخل السعر" required>
+            <label for="price">تأجير (يوم/ شهر):</label>
+            <input type="number" id="number" name="number" placeholder="أدخل المدة" required>
+
+            <label for="description">الوصف:</label>
+            <textarea id="description" name="description" placeholder="أدخل الوصف" required></textarea>
+
+            <button type="submit">إضافة المنتج</button>
+        </form>
+    </div>
+
+</body>
+</html>
+</body>
+</html>

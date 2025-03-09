@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تأجير المنتجات</title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <script defer src="cart.js"></script>
+</head>
+<body>
+    <header class="hero-section">
+        <div class="overlay">
+            <img src="logo.png" alt="لوجو" class="logo">
+            <h1>استأجر بدلاً من الشراء</h1>
+            <p>احصل على ما تحتاجه بسهولة وبتكلفة أقل، وساهم في الحفاظ على البيئة.</p>
+            <div class="search-box">
+                <input type="text" placeholder="ابحث عن ما تريد استئجاره...">
+                <button>🔍 بحث</button>
+            </div>
+        </div>
+    </header>
+    <nav class="header-bottom">
+        <a href="booking.html">📅 حجوزاتي</a>
+        <a href="camera.html">📸 كاميرا</a>
+        <a href="#about-us">ℹ️ من نحن</a>
+        <a href="#contact-us">📞 الاتصال بنا</a>
+        <a href="product.html"> المنتجات</a>
+        <a href="cart1.html">🛒 السلة</a>
+    </nav>
+    <div class="container">
+        <h2>المنتجات المتاحة</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="camera.png" alt="كاميرا Sony A7 III">
+                <h3>كاميرا Sony A7 III</h3>
+                <p class="price">السعر: 100 ريال/يوم</p>
+                <p class="duration">المدة المتاحة: 5 أيام</p>
+                <div class="reviews">⭐ 4.8 (25 تقييم)</div>
+                <button class="add-to-cart" data-name="كاميرا Sony A7 III" data-price="100">🛒 </button>
+            </div>
+            <div class="product">
+                <img src="lab.png" alt="ماك بوك برو 16 إنش">
+                <h3>ماك بوك برو 16 إنش</h3>
+                <p class="price">السعر: 150 ريال/يوم</p>
+                <p class="duration">المدة المتاحة: 7 أيام</p>
+                <div class="reviews">⭐ 4.6 (18 تقييم)</div>
+                <button class="add-to-cart" data-name="ماك بوك برو 16 إنش" data-price="150">🛒 </button>
+            </div>
+            <div class="product">
+                <img src="bicycle.png" alt="دراجة كهربائية">
+                <h3>دراجة كهربائية</h3>
+                <p class="price">السعر: 50 ريال/يوم</p>
+                <p class="duration">المدة المتاحة: 3 أيام</p>
+                <div class="reviews">⭐ 4.9 (30 تقييم)</div>
+                <button class="add-to-cart" data-name="دراجة كهربائية" data-price="50">🛒 </button>
+            </div>
+        </div>
+        <div class="container">
+            <h2 id="about-us">من نحن</h2>
+            <h2>نبذة عنا</h2>
+            <p>نحن في Rentcycle نؤمن بقوة المشاركة. تربط منصتنا بين الأفراد الذين لديهم أشياء غير مستخدمة وأولئك الذين يحتاجون إليها، مما يجعل تأجيرها ومشاركتها وإعادة استخدامها أسهل. نحن ملتزمون بتقديم حل بسيط وموثوق به للأشخاص الذين يرغبون في الاستفادة بشكل أفضل من ممتلكاتهم والمساهمة في أسلوب حياة أكثر استدامة..</p>
+            <h2>قيمنا</h2>
+            <p>
+                . الاستدامة: في رأينا، يمكن لأي شيء أن يخدم أكثر من غرض واحد. نحن ملتزمون بخفض النفايات وتشجيع الاستدامة من خلال تقديم طريقة للأشخاص لمشاركة ممتلكاتهم.
+                . نعمل على إنشاء بيئة آمنة وموثوقة حتى يتمكن المستخدمون من التواصل مع بعضهم البعض بثقة.
+                . الابتكار: نبحث باستمرار عن طرق جديدة لتحسين تجربتك من خلال تضمين ميزات متطورة تعمل على تبسيط وتسريع عملية الإيجار.
+            </p>
+            <p style="text-align: center;">
+                <a href="https://www.instagram.com/rentcycle380" target="_blank"
+                   style="display: inline-block; padding: 12px 24px; background-color: #28a745;
+       color: white; text-decoration: none; font-size: 18px; font-weight: bold;
+       border-radius: 8px; transition: 0.3s;">
+                    📷 تابعنا على إنستجرام
+                </a>
+            </p>
+        </div>
+        <h2 id="contact-us">تواصل معنا</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">رسالتك:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">إرسال</button>
+        </form>
+        <p>📧 البريد الإلكتروني: <a href="mailto:info@rentalplatform.com">info@rentalplatform.com</a></p>
+        <p>📍 العنوان: الرياض، المملكة العربية السعودية</p>
+
+    </div>
+</body>
+</html>
